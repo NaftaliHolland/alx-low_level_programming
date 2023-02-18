@@ -5,3 +5,4 @@ this directory contains c files
 Program that prints 'Progrmming is like buiulding a multilingul puzzle'
 Program that prints 'Progrmming is like buiulding a multilingul puzzle'
 6. Programm that prints the size of data types 
+100 Shell script that that generates assembly code of a C code and saves it to a file
