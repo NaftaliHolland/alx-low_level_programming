@@ -4,3 +4,4 @@ this directory contains c files
 3.Compiles aC file and creates an wxcecutable file and saves the output  in a variablr
 Program that prints 'Progrmming is like buiulding a multilingul puzzle'
 Program that prints 'Progrmming is like buiulding a multilingul puzzle'
+6. Programm that prints the size of data types 
