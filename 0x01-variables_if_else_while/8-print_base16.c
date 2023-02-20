@@ -1,13 +1,12 @@
 #include<stdio.h>
 /**
  * main - Entry point
- * Description: prints alphabet in lowercase then uppercase
+ * Description: prints all numbers to basse 16
  * Return: Always 0 (success)
  */
 int main(void)
 {
 	char  n;
-	char h;
 
 	for (n = 'a'; n <= 'f'; n++)
 	{
