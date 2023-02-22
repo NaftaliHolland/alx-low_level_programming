@@ -12,4 +12,5 @@ int _abs(int n)
 		return (abs * -1);
 	else if (abs >= 0)
 		return (abs);
+	return (0);
 }
