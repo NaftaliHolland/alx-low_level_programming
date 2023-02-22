@@ -5,3 +5,4 @@ Checks for lowercase characters
 Checks whether a character is an alphabet
 Prints the sign of a number
 computes the absolute value of an integer
+Prints last digit
