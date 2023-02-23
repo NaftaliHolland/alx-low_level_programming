@@ -3,3 +3,4 @@ Checks for a digit
 Multiplies two integers
 Prints numbers from 0 -9
 Prints numbers from 0 to 9 except 2 and 4
+Prints 0 to 14 ten times
