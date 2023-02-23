@@ -7,18 +7,18 @@
 int main(void)
 {
 	int count;
-	long long int a = 1, b = 2, next;
+	long int a = 1, b = 2, next;
 
-	printf("%lld, %lld, ", a, b);
+	printf("%ld, %ld, ", a, b);
 	for (count = 2; count <= 50; count++)
 	{
 		next = a + b;
 		a = b;
 		b = next;
 		if (count != 50)
-		printf("%lld, ", next);
+		printf("%ld, ", next);
 		else
-		printf("%lld", next);
+		printf("%ld", next);
 	}
 	printf("\n");
 	return (0);
