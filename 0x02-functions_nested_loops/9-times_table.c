@@ -12,9 +12,9 @@ void times_table(void)
 	{
 		for (c = 0; c <= 10; c++)
 		{
-			char col = c * r;
+			int col = c * r;
 
-			_putchar (col);
+			_putchar (col + '0');
 			_putchar (',');
 			_putchar (' ');
 		}
