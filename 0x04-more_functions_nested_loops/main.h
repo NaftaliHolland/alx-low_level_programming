@@ -2,6 +2,6 @@
 #define main_h
 
 int _putchar(char c);
-int _isuper(int c);
+int _isupper(int c);
 
 #endif

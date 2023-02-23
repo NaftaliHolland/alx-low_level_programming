@@ -5,7 +5,7 @@
  * @c:Integer it takes as input
  * Return:1 if true 0 if false
  */
-int _isuper(int c)
+int _isupper(int c)
 {
 	char u = c + '0';
 
