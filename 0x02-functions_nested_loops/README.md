@@ -10,3 +10,4 @@ Prints all the minutes in 24 hours
 Prints the times table
 Gets sum of two integers
 Prints numbers from n to 98
+prints times table
