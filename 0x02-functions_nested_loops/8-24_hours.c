@@ -13,7 +13,7 @@ void jack_bauer(void)
 		int f = h / 10;
 		int l = h % 10;
 
-		for (min = 0; min <= 60; min++)
+		for (min = 0; min < 60; min++)
 		{
 			int fmin = min / 10;
 			int lmin = min % 10;
