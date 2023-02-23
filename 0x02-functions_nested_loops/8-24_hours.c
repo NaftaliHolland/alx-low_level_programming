@@ -13,15 +13,14 @@ void jack_bauer(void)
 		int f = h / 10;
 		int l = h % 10;
 
-		_putchar (f + '0');
-		_putchar (l + '0');
-		_putchar (':');
-
 		for (min = 0; min <= 60; min++)
 		{
 			int fmin = min / 10;
 			int lmin = min % 10;
 
+			_putchar (f + '0');
+                	_putchar (l + '0');
+			_putchar (':');
 			_putchar (fmin + '0');
 			_putchar (lmin + '0');
 		}
