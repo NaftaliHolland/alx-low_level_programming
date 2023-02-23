@@ -10,12 +10,12 @@ int main(void)
 	long int a = 1, b = 2, next;
 
 	printf("%ld, %ld, ", a, b);
-	for (count = 2; count <= 50; count++)
+	for (count = 2; count < 50; count++)
 	{
 		next = a + b;
 		a = b;
 		b = next;
-		if (count != 50)
+		if (count != 49)
 		printf("%ld, ", next);
 		else
 		printf("%ld", next);
