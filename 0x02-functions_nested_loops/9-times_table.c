@@ -14,9 +14,21 @@ void times_table(void)
 		{
 			int col = c * r;
 
+			if (col < 10)
+			{
 			_putchar (col + '0');
 			_putchar (',');
 			_putchar (' ');
+			}
+			else
+			{
+				int f = col / 10;
+				int l = col % 10;
+				_putchar (f + '0');
+				_putchar (l + '0');
+				_putchar (',');
+				_putchar (' ');
+			}
 		}
 		_putchar ('\n');
 	}
