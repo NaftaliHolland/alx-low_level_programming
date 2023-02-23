@@ -19,10 +19,11 @@ void jack_bauer(void)
 			int lmin = min % 10;
 
 			_putchar (f + '0');
-                	_putchar (l + '0');
+			_putchar (l + '0');
 			_putchar (':');
 			_putchar (fmin + '0');
 			_putchar (lmin + '0');
+			_putchar ('\n');
 		}
 	}
 }
