@@ -10,20 +10,20 @@ void jack_bauer(void)
 
 	for (h = 0; h <= 23; h++)
 	{
-		char f = h / 10;
-		char l = h % 10;
+		int f = h / 10;
+		int l = h % 10;
 
-		_putchar (f);
-		_putchar (l);
+		_putchar (f + '0');
+		_putchar (l + '0');
 		_putchar (':');
 
 		for (min = 0; min <= 60; min++)
 		{
-			char fmin = min / 10;
-			char lmin = min % 10;
+			int fmin = min / 10;
+			int lmin = min % 10;
 
-			_putchar (fmin);
-			_putchar (lmin);
+			_putchar (fmin + '0');
+			_putchar (lmin + '0');
 		}
 	}
 }
