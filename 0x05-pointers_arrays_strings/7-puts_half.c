@@ -5,7 +5,7 @@
  * @str:input
  * Return:void
  */
-void putd_half(char *str)
+void puts_half(char *str)
 {
 	int i;
 
