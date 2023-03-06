@@ -5,7 +5,7 @@
  * @s: input
  * @b: input
  * @n: input
- * Returns: pointer
+ * Return: pointer
  */
 
 char *_memset(char *s, char b, unsigned int n)
@@ -17,5 +17,5 @@ char *_memset(char *s, char b, unsigned int n)
 		s[i] = b;
 	}
 	
-	return (s);
+	return(s);
 }
