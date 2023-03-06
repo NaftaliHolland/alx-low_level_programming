@@ -9,7 +9,7 @@
 
 char *_strchr(char *s, char c)
 {
-	int i, index;
+	int i, index = 0;
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
@@ -24,5 +24,5 @@ char *_strchr(char *s, char c)
 	return (s + i);
 	}
 	else 
-		return (VOID);
+		return;
 }
