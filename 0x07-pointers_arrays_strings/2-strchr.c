@@ -19,5 +19,10 @@ char *_strchr(char *s, char c)
 			break;
 		}
 	}
+	if (index != 0)
+	{
 	return (s + i);
+	}
+	else 
+		return (VOID);
 }
