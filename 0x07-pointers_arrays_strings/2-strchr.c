@@ -21,10 +21,6 @@ char *_strchr(char *s, char c)
 	}
 	if (index != 0)
 		return (s + i);
-	/**
-	 * else
-	*{
-	*	return ('\0');
-	*}
-	*/
+
+	return ('\0');
 }
