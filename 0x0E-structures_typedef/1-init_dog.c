@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-/*#include "dog.h"*/
+#include "dog.h"
 /**
  * init_dog - Initializes a avariable of type struct dog
  * @d:Struct variable to be initialized
