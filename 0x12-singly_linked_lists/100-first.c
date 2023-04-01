@@ -1,9 +1,9 @@
 #include <stdio.h>
 
-void __attribute__((constructor)) hare(void);
+void __attribute__((constructor)) p_first(void);
 
 /**
- * hare - Prints a string before the
+ * p_first - Prints a string before the
  *        main function is executed.
  */
 void hare(void)
