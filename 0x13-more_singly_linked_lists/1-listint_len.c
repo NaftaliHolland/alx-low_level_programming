@@ -1,6 +1,4 @@
 #include "lists.h"
-#include <stdlib.h>
-#include <stdio.h>
 /**
  * listint_len - Returns the number of elements in a list
  * @h: Adress to the head node
