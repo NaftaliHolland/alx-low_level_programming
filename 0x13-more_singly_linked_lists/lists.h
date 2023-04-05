@@ -3,12 +3,13 @@
 #include <stdio.h>
 
 /**
- *truct listint_s - Structure for a node
+ * struct listint_s - Structure for a node
  * @n: data
  * @next: pointer to next node
- * listint_t: type definition for listint_s
- *
  * Description: A node
+ *
+ * listint_t: Typedef for listint_s
+ *
  */
 typedef struct listint_s
 {
