@@ -1,1 +1,0 @@
-Morepointers arrays and strings
