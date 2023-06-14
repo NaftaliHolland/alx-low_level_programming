@@ -30,7 +30,7 @@ char *argstostr(int ac, char **av)
 	}
 	/* add ac to accomodate the new line characters*/
 	len += ac;
-	new_string = (malloc(sizeof(char) * len));
+	new_string = (malloc(sizeof(char) * (len + 1)));
 	if (new_string == NULL)
 		return (NULL);
 
