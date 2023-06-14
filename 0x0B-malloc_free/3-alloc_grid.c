@@ -14,7 +14,7 @@
 int **alloc_grid(int width, int height)
 {
 	int **my2d;
-	int i, j;
+	int i, j, k;
 
 	if (width <= 0 || height <= 0)
 		return (NULL);
@@ -27,7 +27,16 @@ int **alloc_grid(int width, int height)
 	{
 		my2d[i] = malloc((sizeof(int) * width));
 		if (my2d[i] == NULL)
+		{
+			/* frees the space that was previously allocated */
+			for (k = 0; k < i; k++)
+			{
+				free(my2d[k]);
+			}
+			free(my2d);
+
 			return (NULL);
+		}
 		for (j = 0; j < width; j++)
 		{
 			my2d[i][j] = 0;
