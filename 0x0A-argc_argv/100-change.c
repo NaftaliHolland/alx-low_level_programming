@@ -24,6 +24,12 @@ int main(int argc, char **argv)
 		return (1);
 	}
 
+	if (num <= 0)
+	{
+		printf("0\n");
+		return (1);
+	}
+
 	for (; i < 5; i++)
 	{
 		number_of_coins += (num / coins[i]);
