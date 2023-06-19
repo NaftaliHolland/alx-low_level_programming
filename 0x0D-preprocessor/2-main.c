@@ -4,8 +4,8 @@
 /**
  * main - prints the name of the file it was compiled in
  *
- *@void: No input
-
+ * @void: No input
+ *
  * Return: 0
  *
  */
