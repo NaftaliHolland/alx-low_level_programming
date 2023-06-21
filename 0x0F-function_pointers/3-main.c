@@ -28,8 +28,19 @@ int main(int argc, char **argv)
 	a = atoi(argv[1]);
 	b = atoi(argv[3]);
 
-	if (strcmp(op, "+") == 0 || strcmp(op, "-") == 0 || strcmp(op, "*") == 0 || strcmp(op, "/") == 0 || strcmp(op, "%") == 0)
+	if (strcmp(op, "+") == 0 || strcmp(op, "-") == 0)
 	{
+	op_function = get_op_func(op);
+
+	result = op_function(a, b);
+
+	printf("%d\n", result);
+
+	return (0);
+	}
+	if (strcmp(op, "*") == 0 || strcmp(op, "/") == 0 || strcmp(op, "%") == 0)
+	{
+
 	op_function = get_op_func(op);
 
 	result = op_function(a, b);
