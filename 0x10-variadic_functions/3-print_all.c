@@ -24,7 +24,7 @@ void print_all(const char * const format, ...)
 	i = 0;
 	while (myFormat[i])
 		i++;
-	while (i)
+	while (i > 0)
 	{
 		switch (*myFormat)
 		{
