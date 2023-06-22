@@ -30,27 +30,22 @@ void print_all(const char * const format, ...)
 		{
 			case 'c':
 				printf("%c", va_arg(ap, int));
-				if (i != 1)
-					printf(", ");
 				break;
 			case 'i':
 				printf("%d", va_arg(ap, int));
-				if (i != 1)
-					printf(", ");
 				break;
 			case 'f':
 				printf("%f", va_arg(ap, double));
-				if (i != 1)
-					printf(", ");
 				break;
 			case 's':
 				printf("%s", va_arg(ap, char *));
-				if (i != 1)
-					printf(", ");
 				break;
 			default:
 				break;
 		}
+
+		if (i != 1)
+			printf(", ");
 		i--;
 		myFormat++;
 	}
