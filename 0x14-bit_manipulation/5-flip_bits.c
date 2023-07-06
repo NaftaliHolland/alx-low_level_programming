@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdlib.h>
 /**
  * flip_bits - gets number of bits that need to be fliped
  *
@@ -12,10 +12,9 @@
 
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-	unsigned int i, xor;
+	unsigned int i;
+	unsigned long int xor;
 
-	if (n == NULL || m == NULL)
-		return (-1);
 
 	xor =  n ^ m;
 	i = 0;
