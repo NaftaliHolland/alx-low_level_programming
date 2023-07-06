@@ -13,6 +13,8 @@
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
 	unsigned int i, xor;
+	if (n == m)
+		return (0);
 
 	xor =  n ^ m;
 	i = 0;
