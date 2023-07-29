@@ -30,7 +30,7 @@ int main(int argc, char **argv)
 	{
 		if (errno == ENOENT)
 		{
-			dprintf(1, "Error: Can't read from %s\n", argv[1]);
+			dprintf(1, "Error: Can't read from file%s\n", argv[1]);
 			exit(98);
 		}
 		dprintf(2, "Error: Can't read from %s\n", argv[1]);
@@ -51,7 +51,7 @@ int main(int argc, char **argv)
 			dprintf(2, "Can't close fd %d", fd_from);
 			exit(100);
 		}
-		dprintf(2, "Can't read from %s", argv[1]);
+		dprintf(2, "Error: Can't read from file%s\n", argv[1]);
 		exit(98);
 	}
 
