@@ -22,13 +22,13 @@ int main(int argc, char **argv)
 
 	if (argc != 3)
 	{
-		dprintf(1, "Usage: cp file_from file_to\n");
+		dprintf(2, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
 	fd_from = open(argv[1], O_RDONLY);
 	if (fd_from == -1)
 	{
-		dprintf(1, "Can't read from %s", argv[1]);
+		dprintf(2, "Can't read from %s", argv[1]);
 		exit(98);
 	}
 	buffer = malloc(sizeof(char) * BUFFER_SIZE);
@@ -43,7 +43,7 @@ int main(int argc, char **argv)
 	{
 		if ((close(fd_from)) == -1)
 		{
-			dprintf(1, "Can't close fd %d", fd_from);
+			dprintf(2, "Can't close fd %d", fd_from);
 			exit(100);
 		}
 		exit(98);
@@ -55,7 +55,7 @@ int main(int argc, char **argv)
 		{
 			if ((close(fd_from)) == -1)
 			{
-				dprintf(1, "Can't close fd %d", fd_from);
+				dprintf(2, "Can't close fd %d", fd_from);
 				exit(100);
 			}
 			exit(98);
@@ -66,7 +66,7 @@ int main(int argc, char **argv)
 	{
 		if ((close(fd_from)) == -1)
 		{
-			dprintf(1, "Can't close fd %d", fd_from);
+			dprintf(2, "Can't close fd %d", fd_from);
 			exit(100);
 		}
 		dprintf(1, "Error: Can't write to %s", argv[2]);
@@ -76,12 +76,12 @@ int main(int argc, char **argv)
 	dprintf(fd_to, "%s", buffer);
 	if ((close(fd_from)) == -1)
 	{
-		dprintf(1, "Can't close fd %d", fd_from);
+		dprintf(2, "Can't close fd %d", fd_from);
 		exit(100);
 	}
 	if ((close(fd_to)) == -1)
 	{
-		dprintf(1, "Can't close fd %d", fd_from);
+		dprintf(2, "Can't close fd %d", fd_from);
 		exit(100);
 	}
 	return (0);
