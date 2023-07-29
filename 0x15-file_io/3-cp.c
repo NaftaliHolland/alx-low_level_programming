@@ -50,6 +50,14 @@ int main(int argc, char **argv)
 	}
 	while (bytes_read != 0)
 	{
+		fd_to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
+		if (fd_to == -1)
+		{
+			dprintf(2, "Error: Can't write to %s", argv[2]);
+			exit(99);
+		}
+
+		dprintf(fd_to, "%s", buffer);
 		bytes_read = read(fd_from, buffer, BUFFER_SIZE);
 		if (bytes_read == -1)
 		{
@@ -61,19 +69,6 @@ int main(int argc, char **argv)
 			exit(98);
 		}
 	}
-	fd_to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
-	if (fd_to == -1)
-	{
-		if ((close(fd_from)) == -1)
-		{
-			dprintf(2, "Can't close fd %d", fd_from);
-			exit(100);
-		}
-		dprintf(1, "Error: Can't write to %s", argv[2]);
-		exit(99);
-	}
-
-	dprintf(fd_to, "%s", buffer);
 	if ((close(fd_from)) == -1)
 	{
 		dprintf(2, "Can't close fd %d", fd_from);
