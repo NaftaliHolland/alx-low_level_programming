@@ -30,10 +30,10 @@ int main(int argc, char **argv)
 	{
 		if (errno == ENOENT)
 		{
-			dprintf(1, "Error: Can't read from %s", argv[1]);
+			dprintf(1, "Error: Can't read from %s\n", argv[1]);
 			exit(98);
 		}
-		dprintf(2, "Error: Can't read from %s", argv[1]);
+		dprintf(2, "Error: Can't read from %s\n", argv[1]);
 		exit(98);
 	}
 	buffer = malloc(sizeof(char) * BUFFER_SIZE);
