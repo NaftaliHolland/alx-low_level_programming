@@ -28,7 +28,7 @@ int main(int argc, char **argv)
 	fd_from = open(argv[1], O_RDONLY);
 	if (fd_from == -1)
 	{
-		dprintf(2, "Can't read from %s", argv[1]);
+		dprintf(2, "Error: Can't read from %s", argv[1]);
 		exit(98);
 	}
 	buffer = malloc(sizeof(char) * BUFFER_SIZE);
