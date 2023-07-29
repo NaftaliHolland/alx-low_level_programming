@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
-
+#include <errno.h>
 
 /**
  * main - copies the contents of one file to another
@@ -28,6 +28,11 @@ int main(int argc, char **argv)
 	fd_from = open(argv[1], O_RDONLY);
 	if (fd_from == -1)
 	{
+		if (errno == ENOENT)
+		{
+			dprintf(1, "Error: Can't read from %s", argv[1]);
+			exit(98);
+		}
 		dprintf(2, "Error: Can't read from %s", argv[1]);
 		exit(98);
 	}
