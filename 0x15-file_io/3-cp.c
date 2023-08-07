@@ -47,7 +47,7 @@ int main(int argc, char **argv)
 	{
 		if (close(fd_from) == -1)
 		{
-			dprintf(2, "Error: Can't close fd %d", fd_from);
+			dprintf(2, "Error: Can't close fd %d\n", fd_from);
 			exit(100);
 		}
 		dprintf(2, "Error: Can't write to %s\n", argv[2]);
@@ -60,12 +60,12 @@ int main(int argc, char **argv)
 	{
 		if (close(fd_from) == -1)
 		{
-			dprintf(2, "Error: Can't close fd %d", fd_from);
+			dprintf(2, "Error: Can't close fd %d\n", fd_from);
 			exit(100);
 		}
 		if (close(fd_to) == -1)
 		{
-			dprintf(2, "Error: Can't close fd %d", fd_to);
+			dprintf(2, "Error: Can't close fd %d\n", fd_to);
 			exit(100);
 		}
 		exit(99);
@@ -80,12 +80,12 @@ int main(int argc, char **argv)
 		free(buffer);
 		if (close(fd_from) == -1)
 		{
-			dprintf(2, "Error: Can't close fd %d", fd_from);
+			dprintf(2, "Error: Can't close fd %d\n", fd_from);
 			exit(100);
 		}
 		if (close(fd_to) == -1)
 		{
-			dprintf(2, "Error: Can't close fd %d", fd_to);
+			dprintf(2, "Error: Can't close fd %d\n", fd_to);
 			exit(100);
 		}
 	}
@@ -93,12 +93,12 @@ int main(int argc, char **argv)
 	free(buffer);
 	if (close(fd_from) == -1)
 	{
-		dprintf(2, "Error: Can't close fd %d", fd_from);
+		dprintf(2, "Error: Can't close fd %d\n", fd_from);
 		exit(100);
 	}
 	if (close(fd_to) == -1)
 	{
-		dprintf(2, "Error: Can't close fd %d", fd_to);
+		dprintf(2, "Error: Can't close fd %d\n", fd_to);
 		exit(100);
 	}
 
