@@ -1,6 +1,4 @@
 #include "hash_tables.h"
-#include <stdlib.h>
-
 /**
  * key_index - uses the jdb function to compute the index of a key
  *
