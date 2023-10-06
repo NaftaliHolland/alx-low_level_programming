@@ -25,7 +25,10 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 	new->value = malloc(strlen(value) + 1);
 	if (new->value == NULL)
+	{
+		free(new);
 		return (0);
+	}
 
 	new->key = (char *)key;
 	strcpy(new->value, value);
